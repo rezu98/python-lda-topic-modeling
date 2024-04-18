@@ -141,7 +141,7 @@ def compute_each_topic_linear_regression(time_and_theta_df: pd.DataFrame, column
             break
 
     return reg_results
-함요
+
 
 def check_hot_and_cold():
     # TODO
