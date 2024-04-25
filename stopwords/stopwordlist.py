@@ -18,8 +18,8 @@ def get_stop_words() -> set:
         stop_word_list = [line for line in txt_lines if '#' not in line]
 
     except FileNotFoundError:
-        stop_word_list = ['\n', '을', '를', '은', '가', '는', '이', '도', '수', '며', '고']      # 기본 불용어
-
+        stop_word_list = ['\n', '을', '를', '은', '가', '는', '이', '도', '수', '며', '고', 'nan', '우리', '저희', '단지', '기여', '오후', '매우', '여러분', '얘기', '인사', '아마', '추정', '언급', '지금', '질문', '중요', '결정', '다음', '제가', '정도', '고려', '사실', '이후', '현재', '문제', '말씀', '사람']      # 기본 불용어
+        
     return set(stop_word_list)
 
 
